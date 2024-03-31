@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Technique</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="terminal-loader">
+        <div class="terminal-header">
+          <div class="terminal-title">Timer</div>
+          <div class="terminal-controls">
+            <div class="control close"></div>
+            <div class="control minimize"></div>
+            <div class="control maximize"></div>
+          </div>
+        </div>
+        <div class="text">Pomodoro</div>
+      </div>
+      
+  <div id="timer"></div>
+  <div id="controls">
+    <div class="shine">Work Duration (minutes):</div>
+    <input type="number" id="work-duration" class="input" value="25" min="1">
+    <!-- <input type="number"  value="25" min="1"> -->
+    <div class="shine">Break Duration (minutes):</div>
+    <input type="number" id="break-duration"class="input" value="5" min="1">
+    <!-- <input type="number"  value="5" min="1"> -->
+</div>
+<div id="controls_buttons">
+    <button id = "start" class="button">Start</button>
+    <br>
+    <br>
+    <button id="pause" class="button" >Pause</button>
+    <br>
+    <br>
+    <button id="reset" class="button" >Reset</button>
+    <br>
+    <br>
+</div>
+  
+  <div class="shine">Completed Sessions: <span id="completed-sessions">0</span></div>
+  <div class="progress-bar">
+    <div id="progress-bar-fill" class="progress-bar-fill"></div>
+  </div>
+  <div id="session-history">
+   <div class="button_history" >Session History</div>
+    
+    <ul id="session-list"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
